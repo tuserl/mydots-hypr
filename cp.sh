@@ -24,3 +24,5 @@ DEST=~/src/mydots-hypr/.config
 for dir in waybar wofi hypr; do
   rsync -av --delete "$HOME/.config/$dir/" "$DEST/$dir/"
 done
+
+rsync -av --delete ~/.zshrc .
