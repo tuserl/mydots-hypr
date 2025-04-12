@@ -26,3 +26,4 @@ for dir in waybar wofi hypr; do
 done
 
 rsync -av --delete ~/.zshrc .
+rsync -av --delete ~/mysh/hotspot.sh ./mysh/
