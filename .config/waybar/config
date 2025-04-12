@@ -54,7 +54,7 @@
     "return-type": "json",
     "rotate": 90,
     "tooltip": true,
-    "on-click": "~/mysh/hotspot.sh"
+    "on-click": "~/.config/wofi/scripts/wlan1-menu.py",
   },
   "custom/sep": {
     //    "format": "──"
