@@ -2,9 +2,11 @@
 
 # Connection name
 CONN_NAME="nekowifi"
-# Interface name
 INTERFACE="wlan1"
 
-# Connect to the specified Wi-Fi connection using wlan1
-nmcli device disconnect "$INTERFACE"
-nmcli connection up "$CONN_NAME" ifname "$INTERFACE"
+if zenity --question --title="Wi-Fi Switch" --text="Connect to '$CONN_NAME' on interface '$INTERFACE'?"; then
+  nmcli device disconnect "$INTERFACE"
+  nmcli connection up "$CONN_NAME" ifname "$INTERFACE"
+else
+  echo "Cancelled"
+fi

@@ -24,4 +24,6 @@ no flags were set
 rofi-theme-selector
 ```
 
-Recommended dots for beginner : https://github.com/Pipshag/dotfiles_kitties
+Recommended dots for beginner :
+https://github.com/Pipshag/dotfiles_kitties
+https://github.com/7KIR7/dots
