@@ -1,6 +1,8 @@
 * {
   border: none;
-  font-family: "Hack", "Font Awesome 6 Pro";
+  /*font-family: "Hack", "Font Awesome 6 Pro";*/
+  font-family: "Hack Nerd Font", "Hack", "Font Awesome 6 Pro";
+  /*font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free";*/
   font-size: 14px;
   font-weight: 600;
   background: none;

@@ -21,7 +21,7 @@
 
 DEST=~/src/mydots-hypr/.config
 #rsync -av --delete ~/.config/{waybar,wofi,hypr}/ "$DEST"
-for dir in waybar wofi hypr; do
+for dir in waybar wofi cava kitty hypr; do
   rsync -av --delete "$HOME/.config/$dir/" "$DEST/$dir/"
 done
 
