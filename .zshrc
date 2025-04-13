@@ -136,6 +136,8 @@ myrfact | cowsay -f small | lolcat
 #fortune | cowsay -f dragon | lolcat
 #alias nvim-alt='XDG_CONFIG_HOME="$HOME/.config/nvim-alt" nvim'
 alias winegamescope='gamescope -w 1920 -h 1080 -f -- wine '
+alias fixdolphin='XDG_MENU_PREFIX=arch- kbuildsycoca6'
+
 #for z
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
 

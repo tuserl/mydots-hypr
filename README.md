@@ -18,4 +18,8 @@ built against:
 no flags were set
 
 
+
+# choosing rofi themes
+rofi-theme-selector
+
 Recommended dots for beginner : https://github.com/Pipshag/dotfiles_kitties

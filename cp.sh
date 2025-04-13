@@ -20,9 +20,15 @@
 #done
 
 DEST=~/src/mydots-hypr/.config
+DEST1=~/src/mydots-hypr/.local/share
+
 #rsync -av --delete ~/.config/{waybar,wofi,hypr}/ "$DEST"
 for dir in waybar wofi cava kitty hypr; do
   rsync -av --delete "$HOME/.config/$dir/" "$DEST/$dir/"
+done
+
+for dir in rofi; do
+  rsync -av --delete "$HOME/.local/share/$dir/" "$DEST1/$dir/"
 done
 
 rsync -av --delete ~/.zshrc .
