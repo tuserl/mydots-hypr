@@ -3,7 +3,7 @@
 ```
 hyprctl version
 ```
-<code>
+```
 Hyprland 0.48.1 built from branch  at commit 29e2e59fdbab8ed2cc23a20e3c6043d5decb5cdc  (version: bump to v0.48.1).
 Date: Fri Mar 28 16:16:07 2025
 Tag: v0.48.1, commits: 5937
@@ -16,8 +16,7 @@ built against:
 
 
 no flags were set
-
-</code>
+```
 
 # choosing rofi themes
 ```
