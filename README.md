@@ -22,6 +22,9 @@ no flags were set
 ```
 rofi-theme-selector
 ```
+* firefox theme: https://addons.mozilla.org/en-US/firefox/addon/catppuccin-macchiato/
+* /usr/share/themes: Juno-ocean-v40
+* /usr/share/icons:  breeze-dark
 
 Recommended dots for beginner :
 * https://github.com/Pipshag/dotfiles_kitties
