@@ -10,9 +10,9 @@ Tag: v0.48.1, commits: 5937
 built against:
  aquamarine 0.8.0
  hyprlang 0.6.0
- hyprutils 0.5.2
+ hyprutils 0.6.0
  hyprcursor 0.1.12
- hyprgraphics 0.1.2
+ hyprgraphics 0.1.3
 
 
 no flags were set
