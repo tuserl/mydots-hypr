@@ -14,6 +14,10 @@ echo swayidle running...
 #  timeout 300 'pgrep swaylock || swaylock-fancy' \
 #  before-sleep 'swaylock-fancy'
 
+#swayidle -w \
+#  timeout 300 'pgrep -x swaylock || { pgrep -x swaylock-fancy || swaylock-fancy; }' \
+#  before-sleep 'swaylock-fancy'
+
 swayidle -w \
-  timeout 300 'pgrep -x swaylock || { pgrep -x swaylock-fancy || swaylock-fancy; }' \
+  timeout 300 'pgrep -f swaylockfancy-run.sh || ./swaylockfancy-run.sh' \
   before-sleep 'swaylock-fancy'
