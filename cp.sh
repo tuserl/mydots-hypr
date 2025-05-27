@@ -32,4 +32,5 @@ for dir in rofi; do
 done
 
 rsync -av --delete ~/.zshrc .
+rsync -av --delete ~/.tmux.conf .
 rsync -av --delete ~/mysh/hotspot.sh ./mysh/

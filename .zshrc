@@ -126,18 +126,28 @@ alias l='ls -lh'
 alias la='ls -la'
 alias ldl='ls -ld */'
 alias cls='clear'
-export PATH="$HOME/.venv/bin:$PATH"
+#forpython
+#export PATH="$HOME/.venv/bin:$PATH"
 #alias myrfact='wget randomfunfacts.com -O - 2>/dev/null | grep \<strong\> | sed "s;^.*<i>\(.*\)</i>.*$;\1;"  '
 #alias myrfact='cat "/home/sushi/Downloads/Random Fun Facts.html" | grep "<strong>" | sed -E "s/^.*<i>([^<]*)<\/i>.*$/\1/"'
 #alias myrfact='curl -s "file:///home/sushi/Downloads/Random%20Fun%20Facts.html" | grep "<strong>" | sed -E "s/^.*<i>([^<]*)<\/i>.*$/\1/"'
 alias myrfact='curl -s "https://www.randomfunfacts.com/" | grep "<strong>" | sed -E "s/^.*<i>([^<]*)<\/i>.*$/\1/"'
 #fortune | cowsay -f small | lolcat
+#enable this
 myrfact | cowsay -f small | lolcat
 #fortune | cowsay -f dragon | lolcat
 #alias nvim-alt='XDG_CONFIG_HOME="$HOME/.config/nvim-alt" nvim'
 alias winegamescope='gamescope -w 1920 -h 1080 -f -- wine '
 alias fixdolphin='XDG_MENU_PREFIX=arch- kbuildsycoca6'
-
+alias sl='ls'
 #for z
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
