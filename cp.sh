@@ -34,3 +34,5 @@ done
 rsync -av --delete ~/.zshrc .
 rsync -av --delete ~/.tmux.conf .
 rsync -av --delete ~/mysh/hotspot.sh ./mysh/
+rsync -av --delete ~/mysh/funfacts/ ./mysh/funfacts/
+rsync -av --delete "$HOME/.cache/funfacts.txt" .cache

@@ -134,7 +134,9 @@ alias cls='clear'
 alias myrfact='curl -s "https://www.randomfunfacts.com/" | grep "<strong>" | sed -E "s/^.*<i>([^<]*)<\/i>.*$/\1/"'
 #fortune | cowsay -f small | lolcat
 #enable this
-myrfact | cowsay -f small | lolcat
+#myrfact | cowsay -f small | lolcat
+#or this for offline
+/home/sushi/mysh/funfacts/randfact.sh
 #fortune | cowsay -f dragon | lolcat
 #alias nvim-alt='XDG_CONFIG_HOME="$HOME/.config/nvim-alt" nvim'
 alias winegamescope='gamescope -w 1920 -h 1080 -f -- wine '
