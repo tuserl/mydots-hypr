@@ -36,3 +36,4 @@ rsync -av --delete ~/.tmux.conf .
 rsync -av --delete ~/mysh/hotspot.sh ./mysh/
 rsync -av --delete ~/mysh/funfacts/ ./mysh/funfacts/
 rsync -av --delete "$HOME/.cache/funfacts.txt" .cache
+rsync -av --delete ~/sync_to_gdrive.sh .
