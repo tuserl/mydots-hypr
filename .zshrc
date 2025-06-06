@@ -146,6 +146,10 @@ alias sl='ls'
 alias walinit="wal -i mysh/Backgrounds/pixel_sakura_static.png"
 alias nvim-java21='JAVA_HOME=/home/sushi/.sdkman/candidates/java/21.0.6-tem PATH=/home/sushi/.sdkman/candidates/java/21.0.6-tem/bin:$PATH nvim'
 
+#nyea ask disable
+#unsetopt correct
+#nyea ask enable
+setopt correct
 
 #for z
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
