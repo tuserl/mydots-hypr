@@ -1,4 +1,3 @@
-
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -131,7 +130,8 @@ alias cls='clear'
 #alias myrfact='wget randomfunfacts.com -O - 2>/dev/null | grep \<strong\> | sed "s;^.*<i>\(.*\)</i>.*$;\1;"  '
 #alias myrfact='cat "/home/sushi/Downloads/Random Fun Facts.html" | grep "<strong>" | sed -E "s/^.*<i>([^<]*)<\/i>.*$/\1/"'
 #alias myrfact='curl -s "file:///home/sushi/Downloads/Random%20Fun%20Facts.html" | grep "<strong>" | sed -E "s/^.*<i>([^<]*)<\/i>.*$/\1/"'
-alias myrfact='curl -s "https://www.randomfunfacts.com/" | grep "<strong>" | sed -E "s/^.*<i>([^<]*)<\/i>.*$/\1/"'
+#this is myrfact
+#alias myrfact='curl -s "https://www.randomfunfacts.com/" | grep "<strong>" | sed -E "s/^.*<i>([^<]*)<\/i>.*$/\1/"'
 #fortune | cowsay -f small | lolcat
 #enable this
 #myrfact | cowsay -f small | lolcat
@@ -142,6 +142,11 @@ alias myrfact='curl -s "https://www.randomfunfacts.com/" | grep "<strong>" | sed
 alias winegamescope='gamescope -w 1920 -h 1080 -f -- wine '
 alias fixdolphin='XDG_MENU_PREFIX=arch- kbuildsycoca6'
 alias sl='ls'
+
+alias walinit="wal -i mysh/Backgrounds/pixel_sakura_static.png"
+alias nvim-java21='JAVA_HOME=/home/sushi/.sdkman/candidates/java/21.0.6-tem PATH=/home/sushi/.sdkman/candidates/java/21.0.6-tem/bin:$PATH nvim'
+
+
 #for z
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
 

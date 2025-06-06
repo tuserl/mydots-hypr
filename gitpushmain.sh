@@ -1,5 +1,5 @@
 #!/bin/bash
-
+./cp.sh
 # Stage all changes
 git add .
 

@@ -8,6 +8,9 @@ import subprocess
 #CUSTOM_SCRIPT_PATH = "/home/sushi/myscripts/myspecialscript.sh"
 CUSTOM_SCRIPT_PATH = os.path.expanduser("~/mysh/hotspot.sh")
 
+# New: define your custom command here (string)
+CUSTOM_COMMAND = "nm-connection-editor"
+#echo 'Running Custom Command 1'; notify-send 'Custom Command 1 executed!'
 
 def get_saved_connections():
     """Get saved Wi-Fi connections (SSID names)."""
@@ -46,6 +49,9 @@ def run_custom_script():
     else:
         os.system(f"notify-send 'Script not found or not executable: {CUSTOM_SCRIPT_PATH}'")
 
+def run_custom_command():
+    """Run the custom command stored in CUSTOM_COMMAND variable."""
+    os.system(CUSTOM_COMMAND)
 
 def connect_to_wifi(connection_name):
     """Connect to a saved Wi-Fi connection."""
@@ -62,7 +68,7 @@ def main():
         os.system("notify-send 'No saved Wi-Fi connections found.'")
         return
 
-    menu_options = ["Custom Script"] + connections
+    menu_options = ["Custom Script", "Custom Script 1: nm-connection-editor"] + connections
     selected = run_wofi(menu_options)
 
     if not selected:
@@ -70,6 +76,8 @@ def main():
 
     if selected == "Custom Script":
         run_custom_script()
+    elif selected == "Custom Script 1: nm-connection-editor":
+        run_custom_command()
     else:
         connect_to_wifi(selected)
 
