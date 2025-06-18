@@ -1,13 +1,11 @@
 #!/bin/bash
+git config --global core.editor "nvim"
+#git config --show-origin core.editor
+
 ./cp.sh
 # Stage all changes
 git add .
-
-# Ask for a commit message
-read -p "Enter commit message: " msg
-
-# Commit with user message
-git commit -m "$msg"
-
+# Open nvim to write commit message
+git commit
 # Push to the current branch
 git push

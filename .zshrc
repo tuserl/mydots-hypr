@@ -149,8 +149,8 @@ alias nvim-java21='JAVA_HOME=/home/sushi/.sdkman/candidates/java/21.0.6-tem PATH
 #nyea ask disable
 #unsetopt correct
 #nyea ask enable
-#setopt correct
-setopt correct_all
+setopt correct
+#setopt correct_all
 
 #for z
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh

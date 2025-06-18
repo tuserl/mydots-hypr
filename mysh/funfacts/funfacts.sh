@@ -10,6 +10,7 @@ TODAY=$(date +%Y-%m-%d)
 
 # Check if any facts already fetched today
 FACTS_TODAY=$(grep "^$TODAY|" "$FACT_FILE" | cut -d'|' -f2-)
+#FACTS_TODAY=$(cut -d'|' -f2- "$FACT_FILE")
 
 if [ -n "$FACTS_TODAY" ]; then
   echo "Fun facts for $TODAY:"
@@ -19,10 +20,17 @@ else
 fi
 
 while true; do
-  FACT=$(curl -s "https://www.randomfunfacts.com/" | grep "<strong>" | sed -E "s/^.*<i>([^<]*)<\/i>.*$/\1/" | xargs)
+  #  FACT=$(curl -s "https://www.randomfunfacts.com/" | grep "<strong>" | sed -E "s/^.*<i>([^<]*)<\/i>.*$/\1/" | xargs)
+  # Fixed xargs: unmatched single quote; by default quotes are special to xargs unless you use the -0 option
+  FACT=$(curl -s "https://www.randomfunfacts.com/" |
+    grep "<strong>" |
+    sed -E "s/^.*<i>([^<]*)<\/i>.*$/\1/" |
+    sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
   if [ -n "$FACT" ]; then
     # Check if this exact fact already saved today
-    if grep -qxF "$TODAY|$FACT" "$FACT_FILE"; then
+    #    if grep -qxF "$TODAY|$FACT" "$FACT_FILE"; then
+    # Check if this exact fact already saved all time
+    if grep -qF "|$FACT" "$FACT_FILE"; then
       echo "Duplicate fact, skipping..."
     else
       echo "$TODAY|$FACT" >>"$FACT_FILE"
