@@ -143,7 +143,10 @@ alias winegamescope='gamescope -w 1920 -h 1080 -f -- wine '
 alias fixdolphin='XDG_MENU_PREFIX=arch- kbuildsycoca6'
 alias sl='ls'
 
-alias walinit="wal -i mysh/Backgrounds/pixel_sakura_static.png"
+#alias walinit="wal -i mysh/Backgrounds/pixel_sakura_static.png"
+#alias wal-swww='wal -i "$(swww query | grep -oP "image: \K.*")"'
+alias walinit="~/.config/hypr/scripts/walautoinit.sh"
+
 alias nvim-java21='JAVA_HOME=/home/sushi/.sdkman/candidates/java/21.0.6-tem PATH=/home/sushi/.sdkman/candidates/java/21.0.6-tem/bin:$PATH nvim'
 
 #nyea ask disable
