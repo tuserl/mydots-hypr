@@ -27,6 +27,7 @@ while true; do
   #  grep "<strong>" |
   #  sed -E "s/^.*<i>([^<]*)<\/i>.*$/\1/" |
   #  sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+  # For: grep: (standard input): binary file matches
   FACT=$(curl -s "https://www.randomfunfacts.com/" |
     grep -oP '(?<=<i>).*?(?=</i>)' |
     head -n1 |
