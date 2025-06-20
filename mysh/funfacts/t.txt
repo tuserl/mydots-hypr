@@ -56,3 +56,13 @@
         \  (oo)____
            (__)    )\
               ||--|| *
+
+ _________________________________________
+/ TYPEWRITER is the longest word that can \
+| be made using the letters only on one   |
+\ row of the keyboard.                    /
+ -----------------------------------------
+       \   ,__,
+        \  (oo)____
+           (__)    )\
+              ||--|| *
